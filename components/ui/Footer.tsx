@@ -260,7 +260,7 @@ const Footer = () => {
                 <div>
                   <p className="text-xs text-gray-400">Call Us</p>
                   <a href="tel:+254701710837" className="font-medium hover:text-pink-400 transition-colors">
-                    +254 701 710837
+                    070 171 0837
                   </a>
                 </div>
               </div>
@@ -281,7 +281,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400">Opening Hours</p>
-                  <p className="font-medium text-sm">Mon - Sat: 8AM - 9PM</p>
+                  <p className="font-medium text-sm">Mon - Sat: 8AM - 5PM</p>
                 </div>
               </div>
             </div>

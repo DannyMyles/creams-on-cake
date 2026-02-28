@@ -51,7 +51,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+254 701 710837"],
+      details: ["070 171 0837"],
       description: "Call us for quick inquiries",
       color: "from-pink-400 to-rose-500"
     },
@@ -72,7 +72,7 @@ export default function Contact() {
     {
       icon: Clock,
       title: "Hours",
-      details: ["8:00 AM - 9:00 PM", "Monday to Saturday"],
+      details: ["8:00 AM - 5:00 PM", "Monday to Saturday"],
       description: "We're here to help",
       color: "from-purple-400 to-pink-500"
     }

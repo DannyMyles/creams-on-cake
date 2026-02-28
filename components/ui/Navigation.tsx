@@ -58,7 +58,7 @@ const Navigation = () => {
                   href="tel:+254701710837"
                   className="hover:text-cake-primary transition-colors duration-300"
                 >
-                  +254 701 710837
+                  070 171 0837
                 </a>
               </div>
               <div className="hidden md:block h-4 w-px bg-white/20"></div>
@@ -79,7 +79,7 @@ const Navigation = () => {
                   <Clock size={14} />
                   <span className="absolute inset-0 animate-pulse bg-cake-accent rounded-full opacity-50"></span>
                 </div>
-                8:00 AM - 9:00 PM (Mon-Sat)
+                8:00 AM - 5:00 PM (Mon-Sat)
               </div>
             </div>
             
