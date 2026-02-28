@@ -109,7 +109,7 @@ const Navigation = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-cake-primary/30 to-cake-accent/30 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                 <div className="relative w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-cake-primary to-cake-accent rounded-full flex items-center justify-center shadow-cake-lg group-hover:scale-110 transition-transform duration-500">
-                  <Cake size={24} className="text-white" />
+                  <Cake size={24} className="text-[#d39ba0]" />
                 </div>
               </div>
               <div className="flex flex-col">
