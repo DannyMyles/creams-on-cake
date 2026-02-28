@@ -67,7 +67,7 @@ const WhatsAppWidget = ({ phoneNumber }: WhatsAppWidgetProps) => {
                   <button
                     key={index}
                     onClick={() => setMessage(msg)}
-                    className="text-xs px-3 py-1.5 bg-cake-rose rounded-full text-gray-700 hover:bg-cake-primary hover:text-white transition-colors"
+                    className="text-xs px-3 py-1.5 bg-cake-rose rounded-full text-gray-700 hover:bg-cake-primary hover:text-gray-900 transition-colors"
                   >
                     {msg.split(' ').slice(0, 3).join(' ')}...
                   </button>

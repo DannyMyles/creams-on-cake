@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { 
-  Phone, Mail, Clock, Menu, X, Cake, Star
+  Phone, Mail, Clock, Menu, X, Cake, Star, Sparkles
 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
@@ -107,16 +107,23 @@ const Navigation = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-cake-primary/30 to-cake-accent/30 rounded-full blur-xl"></div>
-                <div className="relative w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-cake-primary to-cake-accent rounded-full flex items-center justify-center shadow-cake-lg">
+                <div className="absolute inset-0 bg-gradient-to-br from-cake-primary/30 to-cake-accent/30 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <div className="relative w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-cake-primary to-cake-accent rounded-full flex items-center justify-center shadow-cake-lg group-hover:scale-110 transition-transform duration-500">
                   <Cake size={24} className="text-white" />
                 </div>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-bold text-gradient-cake font-display">
+                <span className="relative text-xl md:text-2xl font-bold text-gradient-cake font-display group-hover:scale-105 transition-transform duration-300">
                   Creams on Cakes
+                  {/* Animated sparkles */}
+                  <span className="absolute -top-2 -right-4 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <Sparkles size={14} className="text-cake-accent animate-pulse" />
+                  </span>
+                  <span className="absolute -top-1 -left-3 opacity-0 group-hover:opacity-100 transition-all duration-500" style={{ animationDelay: '0.2s' }}>
+                    <Sparkles size={10} className="text-cake-primary animate-pulse" />
+                  </span>
                 </span>
-                <span className="text-xs text-gray-500 -mt-1">Premium Cake Designs</span>
+                <span className="text-xs text-gray-500 -mt-1 group-hover:text-cake-primary transition-colors duration-300">Premium Cake Designs</span>
               </div>
             </Link>
 
