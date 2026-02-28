@@ -144,15 +144,6 @@ const Hero = () => {
                 Crafting exquisite custom cakes for birthdays, weddings, and special occasions. Each creation is a masterpiece designed to make your celebration unforgettable.
               </p>
 
-              {/* Promotional Banner - Enhanced Styling */}
-              <div className="flex flex-wrap items-center gap-3 px-5 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-500 border border-emerald-400 rounded-xl shadow-lg" style={{ animationDelay: '0.32s' }}>
-                <div className="p-2 bg-white/20 rounded-lg">
-                  <Truck size={20} className="text-white" />
-                </div>
-                <span className="text-base font-bold text-white">Free delivery on all orders</span>
-                <span className="text-xs text-emerald-100 bg-white/20 px-3 py-1 rounded-full font-semibold animate-pulse">Limited Time Offer</span>
-              </div>
-
               {/* Feature highlights */}
               <div className="flex flex-wrap gap-4" style={{ animationDelay: '0.35s' }}>
                 {features.map((feature, idx) => (
@@ -276,7 +267,7 @@ const Hero = () => {
               <div className="relative card-modern overflow-hidden transform hover:scale-[1.02] transition-transform duration-500 rounded-2xl shadow-cake-lg">
                 <div className="relative h-[350px] md:h-[500px] lg:h-[550px] rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+                    src="https://images.unsplash.com/photo-1670529774874-601ce26eec53?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Luxury Wedding Cake"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-700"

@@ -47,7 +47,7 @@ const Navigation = () => {
       {/* Top Contact Bar */}
       <div className="bg-gradient-to-r from-cake-dark via-cake-darkLight to-cake-dark text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-cake-primary/20 to-cake-accent/20 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 text-[#80595C]">
           <div className="flex flex-col md:flex-row justify-between items-center py-2 text-sm">
             <div className="hidden md:flex flex-wrap items-center gap-x-6 gap-y-2 mb-2 md:mb-0">
               <div className="flex items-center gap-2 group">
@@ -88,7 +88,6 @@ const Navigation = () => {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star key={i} size={12} className="text-cake-accent fill-cake-accent" />
                 ))}
-                <span className="text-xs ml-1 text-white/80">5.0 Rating</span>
               </div>
             </div>
           </div>

@@ -1,8 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { MessageCircle, X, Send } from 'lucide-react';
+import { X, Send } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaWhatsapp } from "react-icons/fa6";
 
 interface WhatsAppWidgetProps {
   phoneNumber: string;
@@ -41,7 +42,7 @@ const WhatsAppWidget = ({ phoneNumber }: WhatsAppWidgetProps) => {
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-cake-primary to-cake-accent rounded-full flex items-center justify-center">
-                  <MessageCircle size={20} className="text-white" />
+                  <FaWhatsapp size={24} className="text-[#25D366]" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Creams on Cakes</h4>
@@ -103,7 +104,7 @@ const WhatsAppWidget = ({ phoneNumber }: WhatsAppWidgetProps) => {
         {isOpen ? (
           <X size={24} />
         ) : (
-          <MessageCircle size={24} />
+          <FaWhatsapp size={24} className="text-[#25D366]" />
         )}
       </motion.button>
     </div>

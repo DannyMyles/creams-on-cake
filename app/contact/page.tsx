@@ -1,13 +1,12 @@
 'use client';
 
 import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { 
   Phone, Mail, MapPin, Clock, Send, CheckCircle,
-  MessageCircle, Facebook, Instagram, Twitter,
+  Facebook, Instagram, Twitter,
   Sparkles, ArrowRight, Loader2
 } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -93,7 +92,7 @@ export default function Contact() {
     { icon: Facebook, href: "#", label: "Facebook", color: "from-pink-500 to-rose-500" },
     { icon: Instagram, href: "#", label: "Instagram", color: "from-pink-500 to-purple-500" },
     { icon: Twitter, href: "#", label: "Twitter", color: "from-sky-400 to-sky-500" },
-    { icon: MessageCircle, href: "https://wa.me/254701710837", label: "WhatsApp", color: "from-green-400 to-emerald-500" },
+    { icon: FaWhatsapp, href: "https://wa.me/254701710837", label: "WhatsApp", color: "from-green-400 to-emerald-500" },
   ];
 
   return (
@@ -146,7 +145,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             
             {/* Contact Form */}
-            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-cake-lg">
+            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-cake-lg self-start">
               <div className="mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                   Send us a Message
@@ -275,21 +274,119 @@ export default function Contact() {
 
             {/* Map & Additional Info */}
             <div className="space-y-8">
-              {/* Map Placeholder */}
-              <div className="bg-white rounded-3xl p-6 shadow-cake-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Find Us</h3>
-                <div className="relative h-64 bg-gradient-to-br from-cake-light to-cake-secondary rounded-2xl overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800"
-                    alt="Location"
-                    fill
-                    className="object-cover"
+              {/* Google Maps Embed */}
+              <div className="bg-white rounded-3xl overflow-hidden shadow-cake-lg">
+                {/* Map Container */}
+                <div className="relative h-[450px] w-full">
+                  {/* Google Maps Embed */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.82!2d36.83!3d-1.28!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117e0e5e3a3b%3A0x1234567890abcdef!2sNdwaru%20Road%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1699999999999!5m2!1sen!2ske"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full"
+                    title="Creams on Cakes Location Map"
                   />
-                  <div className="absolute inset-0 bg-cake-dark/40 flex items-center justify-center">
-                    <div className="bg-white rounded-2xl p-6 text-center shadow-cake-lg">
-                      <MapPin size={32} className="mx-auto text-cake-primary mb-2" />
-                      <p className="font-semibold text-gray-900">Creams on Cakes</p>
-                      <p className="text-sm text-gray-600">Along Ndwaru Road, Off Naivasha Road</p>
+                  
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+                  
+                  {/* Location Card Overlay */}
+                  <div className="absolute bottom-6 left-6 right-6 md:left-8 md:w-96">
+                    <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-cake-lg border border-white/20">
+                      <div className="flex items-start gap-4">
+                        <div className="bg-gradient-to-br from-cake-primary to-cake-accent p-3 rounded-xl text-green-600 flex-shrink-0 shadow-lg">
+                          <MapPin size={24} />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-lg font-bold text-gray-900 mb-1">
+                            Creams on Cakes
+                          </h3>
+                          <p className="text-gray-600 text-sm mb-4">
+                            Along Ndwaru Road, Off Naivasha Road, Nairobi, Kenya
+                          </p>
+                          <a 
+                            href="https://maps.google.com/?q=Ndwaru+Road+Naivasha+Road+Nairobi+Kenya" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 bg-gradient-to-r from-cake-primary to-cake-accent px-5 py-2.5 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg text-sm"
+                          >
+                            Get Directions
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Features Grid */}
+                <div className="p-8 bg-gradient-to-br from-gray-50 to-white">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div className="group flex items-center gap-4 p-5 bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-gray-100">
+                      <div className="bg-gradient-to-br from-pink-100 to-rose-200 p-4 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">Custom Designs</h4>
+                        <p className="text-sm text-gray-600">Unique creations</p>
+                      </div>
+                    </div>
+                    
+                    <div className="group flex items-center gap-4 p-5 bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-gray-100">
+                      <div className="bg-gradient-to-br from-amber-100 to-yellow-200 p-4 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">Premium Quality</h4>
+                        <p className="text-sm text-gray-600">Best ingredients</p>
+                      </div>
+                    </div>
+                    
+                    <div className="group flex items-center gap-4 p-5 bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-gray-100">
+                      <div className="bg-gradient-to-br from-emerald-100 to-teal-200 p-4 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">Free Delivery</h4>
+                        <p className="text-sm text-gray-600">Within the city</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Transport Info */}
+                  <div className="mt-6 pt-6 border-t border-gray-200">
+                    <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600">
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5 text-cake-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                        <span>5 min from main road</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5 text-cake-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <span>Easy access</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5 text-cake-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Central location</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -329,8 +426,8 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white text-cake-primary px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors"
                 >
-                  <MessageCircle size={20} />
-                  Chat on WhatsApp
+                  <FaWhatsapp size={20} className="text-[#25D366]" />
+                  Chat on WhatsApp 
                 </a>
               </div>
             </div>
