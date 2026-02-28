@@ -107,11 +107,11 @@ const Navigation = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-cake-primary/30 to-cake-accent/30 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-cake-primary to-cake-accent rounded-full flex items-center justify-center shadow-cake-lg group-hover:scale-110 transition-transform duration-500">
-                  <Cake size={24} className="text-[#d39ba0]" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-300/30 to-amber-400/30 rounded-full blur-xl"></div>
+                  <div className="relative w-16 h-16 bg-gradient-to-br from-pink-400 to-amber-400 rounded-full flex items-center justify-center shadow-cake-lg">
+                    <Cake size={32} className="text-white" />
+                  </div>
                 </div>
-              </div>
               <div className="flex flex-col">
                 <span className="relative text-xl md:text-2xl font-bold text-gradient-cake font-display group-hover:scale-105 transition-transform duration-300">
                   Creams on Cakes
