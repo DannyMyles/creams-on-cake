@@ -254,7 +254,6 @@ export default function Home() {
                 icon: Heart,
                 title: "Wedding Cakes",
                 description: "Elegant, sophisticated cakes designed to be the perfect centerpiece for your special day",
-                price: "From KES 15,000",
                 color: "from-pink-400 to-rose-500",
                 image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600"
               },
@@ -262,7 +261,6 @@ export default function Home() {
                 icon: Cake,
                 title: "Birthday Cakes",
                 description: "Fun, creative cakes customized to match any theme or personality",
-                price: "From KES 5,000",
                 color: "from-purple-400 to-pink-500",
                 image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=600"
               },
@@ -270,7 +268,6 @@ export default function Home() {
                 icon: Gift,
                 title: "Custom Orders",
                 description: "Unique creations for any celebration, tailored to your specific vision",
-                price: "From KES 8,000",
                 color: "from-amber-400 to-yellow-500",
                 image: "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600"
               }
@@ -295,8 +292,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                   <p className="text-gray-700 mb-4">{service.description}</p>
                   
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <span className="text-gradient-gold font-bold">{service.price}</span>
+                  <div className="pt-4 border-t border-gray-100">
                     <Link 
                       href="/services"
                       className="flex items-center gap-1 text-cake-dark font-medium hover:text-cake-primary transition-colors"
