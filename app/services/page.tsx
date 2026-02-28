@@ -14,7 +14,6 @@ const services = [
     icon: Heart,
     title: "Wedding Cakes",
     description: "Elegant, sophisticated cakes designed to be the perfect centerpiece for your special day. Our wedding cakes are crafted with meticulous attention to detail, ensuring each tier is a masterpiece that complements your wedding theme.",
-    price: "From KES 15,000",
     features: [
       "Multi-tier designs",
       "Custom flavor options",
@@ -30,7 +29,6 @@ const services = [
     icon: PartyPopper,
     title: "Birthday Cakes",
     description: "Fun, creative cakes customized to match any theme or personality. From children's wonderlands to elegant adult celebrations, we bring your vision to life with vibrant colors and exciting designs.",
-    price: "From KES 5,000",
     features: [
       "Any theme possible",
       "Custom character designs",
@@ -46,7 +44,6 @@ const services = [
     icon: Gift,
     title: "Custom Orders",
     description: "Unique creations for any celebration, tailored to your specific vision. Whether it's an anniversary, graduation, or corporate event, we create one-of-a-kind cakes that make lasting impressions.",
-    price: "From KES 8,000",
     features: [
       "Fully customized design",
       "Any occasion covered",
@@ -62,7 +59,6 @@ const services = [
     icon: Truck,
     title: "Cake Delivery",
     description: "Professional delivery service ensuring your cake arrives safely and on time. We handle all aspects of transportation to guarantee your cake maintains its beauty from our studio to your venue.",
-    price: "From KES 500",
     features: [
       "City-wide delivery",
       "Safe handling guaranteed",
@@ -78,7 +74,6 @@ const services = [
     icon: Baby,
     title: "Baby Shower Cakes",
     description: "Adorable and elegant cakes celebrating the upcoming arrival. From gender reveals to cute baby themes, we create sweet centerpieces for your joyful celebration.",
-    price: "From KES 6,000",
     features: [
       "Gender reveal cakes",
       "Soft pastel themes",
@@ -94,7 +89,6 @@ const services = [
     icon: HeartHandshake,
     title: "Corporate Cakes",
     description: "Professional cakes for business events, product launches, and company celebrations. Make your corporate event memorable with a custom-designed cake that represents your brand.",
-    price: "From KES 10,000",
     features: [
       "Brand incorporation",
       "Professional designs",
@@ -172,8 +166,7 @@ export default function Services() {
                     ))}
                   </ul>
                   
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <span className="text-gradient-gold font-bold">{service.price}</span>
+                  <div className="flex items-center justify-end pt-4 border-t border-gray-100">
                     <Link 
                       href="/contact"
                       className="flex items-center gap-1 text-cake-dark font-medium hover:text-cake-primary transition-colors"

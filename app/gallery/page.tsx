@@ -60,7 +60,7 @@ const galleryImages = [
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1563729768-6af7c46d6eb5?w=1200",
+    src: "https://images.unsplash.com/photo-1562440499-64c9a111f713?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNha2V8ZW58MHx8MHx8fDA%3D",
     alt: "Unicorn Cake",
     category: "Birthday",
     title: "Magical Unicorn",
@@ -68,7 +68,7 @@ const galleryImages = [
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1577114995803-d8ce0e2b47a9?w=1200",
+    src: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1200",
     alt: "Berry Cake",
     category: "Custom",
     title: "Berry Bliss",
@@ -84,7 +84,7 @@ const galleryImages = [
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1533236833257-b025c0a6b6a8?w=1200",
+    src: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VkZGluZyUyMGNha2V8ZW58MHx8MHx8fDA%3D",
     alt: "Tiered Cake with Flowers",
     category: "Wedding",
     title: "Floral Cascade",
@@ -92,7 +92,7 @@ const galleryImages = [
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1623749234631-27d4d4b5b3e8?w=1200",
+    src: "https://images.unsplash.com/photo-1678473289821-1818e3f82e9a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Modern Minimalist Cake",
     category: "Custom",
     title: "Modern Art",
@@ -100,7 +100,7 @@ const galleryImages = [
   },
   {
     id: 12,
-    src: "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=1200",
+    src: "https://images.unsplash.com/photo-1609968159836-f1c80babc584?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Rustic Naked Cake",
     category: "Wedding",
     title: "Rustic Beauty",

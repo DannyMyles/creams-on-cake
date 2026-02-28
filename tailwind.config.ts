@@ -20,10 +20,13 @@ const config: Config = {
           accentLight: '#E8C865',   // Light Gold
           dark: '#5D4037',          // Chocolate Brown
           darkLight: '#8B6B5C',     // Light Brown
-          light: '#FFFAF0',         // Floral White
+          darkAlt: '#4A3728',      // Darker Brown (for dark sections)
+          darkAltLight: '#6B5344', // Medium Brown (for dark sections)
+          light: '#FFFAF0',        // Floral White
           rose: '#F8E8E8',          // Rose tint
           vanilla: '#FFF8DC',       // Vanilla
           chocolate: '#3E2723',    // Dark Chocolate
+          roseLight: '#E0ACB0',    // Rose Light (#E0ACB0)
         },
         // Additional brand colors
         brand: {

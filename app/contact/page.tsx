@@ -363,7 +363,7 @@ export default function Contact() {
               },
               {
                 q: "Do you deliver cakes?",
-                a: "Yes, we offer free delivery within the city for orders above KES 10,000. For smaller orders, we can arrange delivery at an additional cost. We also offer setup at your venue."
+                a: "Yes, we offer free delivery within the city. We also offer setup at your venue to ensure your cake is displayed perfectly."
               },
               {
                 q: "Can I customize the cake design?",

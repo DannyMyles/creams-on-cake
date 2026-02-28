@@ -149,7 +149,7 @@ const Hero = () => {
                 <div className="p-2 bg-white/20 rounded-lg">
                   <Truck size={20} className="text-white" />
                 </div>
-                <span className="text-base font-bold text-white">Free delivery on orders above $50</span>
+                <span className="text-base font-bold text-white">Free delivery on all orders</span>
                 <span className="text-xs text-emerald-100 bg-white/20 px-3 py-1 rounded-full font-semibold animate-pulse">Limited Time Offer</span>
               </div>
 

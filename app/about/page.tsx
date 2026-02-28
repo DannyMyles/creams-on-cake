@@ -144,7 +144,7 @@ export default function About() {
             {values.map((value, index) => (
               <div key={index} className="feature-card">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cake-primary to-cake-accent flex items-center justify-center mb-6">
-                  <value.icon size={28} className="text-white" />
+                  <value.icon size={28} className="text-[#E0ACB0]" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
                 <p className="text-gray-700">{value.description}</p>
