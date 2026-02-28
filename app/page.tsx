@@ -166,7 +166,7 @@ export default function Home() {
               
               {/* Experience Badge */}
               <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-cake-primary to-cake-accent text-white rounded-2xl p-6 shadow-cake-lg animate-bounce-slow">
-                <div className="text-3xl font-bold">5+</div>
+                <div className="text-3xl font-bold">7+</div>
                 <div className="text-sm">Years Experience</div>
               </div>
               

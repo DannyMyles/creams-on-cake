@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 
 const stats = [
-  { value: '5+', label: 'Years Experience', icon: Clock },
+  { value: '7+', label: 'Years Experience', icon: Clock },
   { value: '1000+', label: 'Cakes Delivered', icon: Cake },
   { value: '500+', label: 'Happy Clients', icon: Users },
   { value: '4.9', label: 'Average Rating', icon: Star },

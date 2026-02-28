@@ -37,7 +37,7 @@ const Hero = () => {
       bgColor: 'bg-pink-50'
     },
     { 
-      value: '5+', 
+      value: '7+', 
       label: 'Years Experience', 
       icon: Star,
       color: 'from-amber-400 to-yellow-500',
