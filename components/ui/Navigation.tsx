@@ -135,7 +135,7 @@ const Navigation = () => {
                   href={item.href}
                   className={`px-4 py-3 font-medium transition-all duration-300 relative ${
                     isActiveLink(item.href)
-                      ? 'text-cake-primary'
+                      ? 'border-b border-[#80595C] text-cake-primary'
                       : 'text-gray-800 hover:text-cake-primary'
                   }`}
                 >

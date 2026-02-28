@@ -171,7 +171,7 @@ export default function Gallery() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-2.5 rounded-full font-medium transition-all duration-300 ${
                   selectedCategory === category
-                    ? 'bg-gradient-to-r from-cake-primary to-cake-accent text-white shadow-cake-lg'
+                    ? 'bg-[#80595C] from-cake-primary to-cake-accent text-white shadow-cake-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-cake-primary/10 hover:text-cake-primary'
                 }`}
               >
