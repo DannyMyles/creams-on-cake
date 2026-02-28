@@ -115,8 +115,8 @@ export default function About() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-2xl mb-4">
                   <stat.icon size={32} className="text-cake-primary" />
                 </div>
-                <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-gray-300">{stat.label}</div>
+                <div className="text-4xl font-bold text-[#9a9a9e] mb-2">{stat.value}</div>
+                <div className="text-gray-500">{stat.label}</div>
               </div>
             ))}
           </div>

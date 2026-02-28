@@ -318,7 +318,7 @@ export default function Contact() {
               </div>
 
               {/* Quick Response Card */}
-              <div className="bg-gradient-to-br from-cake-primary to-cake-accent rounded-3xl p-8 text-white shadow-cake-lg">
+              <div className="bg-gradient-to-br from-cake-primary to-cake-accent rounded-3xl p-8  shadow-cake-lg">
                 <h3 className="text-xl font-bold mb-4">Need a Quick Response?</h3>
                 <p className="mb-6 opacity-90">
                   For immediate assistance, reach out to us on WhatsApp. We typically respond within minutes!

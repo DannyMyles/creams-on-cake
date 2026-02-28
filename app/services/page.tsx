@@ -278,34 +278,20 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-cake-primary via-cake-primaryDark to-cake-accent relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-pattern-dots opacity-20"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Ready to Order Your Dream Cake?
             </h2>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-8">
               Contact us today for a free consultation. Let's create something extraordinary for your special celebration!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/contact"
-                className="bg-white text-cake-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-cake-lg"
-              >
+              <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
                 Get a Quote
               </Link>
-              <Link 
-                href="/gallery"
-                className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all duration-300"
-              >
+              <Link href="/gallery" className="btn-secondary inline-flex items-center gap-2">
                 View Gallery
               </Link>
             </div>
